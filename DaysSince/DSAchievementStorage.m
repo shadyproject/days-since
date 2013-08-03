@@ -28,19 +28,12 @@
     return achievements;
 }
 
--(void)addAcheviement:(DSAchievement *)achieve{
+-(void)addAchievement:(DSAchievement *)achieve{
     [achievements addObject:achieve];
 }
 
--(void)removeItem:(DSAchievement*)achieve{
+-(void)removeAchievement:(DSAchievement *)achieve{
     [achievements removeObjectIdenticalTo:achieve];
-}
-
--(void)moveItemAtIndex:(int)from toIndex:(int)to {
-    DSAchievement* achieve = [achievements objectAtIndex:from];
-    
-    [achievements removeObjectAtIndex:from];
-    [achievements insertObject:achieve atIndex:to];
 }
 
 #pragma mark -

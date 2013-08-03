@@ -18,8 +18,7 @@
 +(DSAchievementStorage*)sharedStorage;
 
 -(NSArray*)allAchievements;
--(void)addAcheviement:(DSAchievement*)achieve;
+-(void)addAchievement:(DSAchievement*)achieve;
 -(void)removeAchievement:(DSAchievement*)achieve;
--(void)moveItemAtIndex:(int)from toIndex:(int)to;
 
 @end
