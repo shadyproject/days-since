@@ -24,6 +24,7 @@
 		2D7AA18117AD4163006519EF /* DSAchievementViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D7AA18017AD4163006519EF /* DSAchievementViewController.m */; };
 		2D7AA18417AD41F5006519EF /* DSAchievement.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D7AA18317AD41F5006519EF /* DSAchievement.m */; };
 		2D7AA18717AD5E1E006519EF /* TestableDSAchievement.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D7AA18617AD5E1E006519EF /* TestableDSAchievement.m */; };
+		2D7AA18A17AD890D006519EF /* DSAchievementStorage.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D7AA18917AD890D006519EF /* DSAchievementStorage.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -62,6 +63,8 @@
 		2D7AA18317AD41F5006519EF /* DSAchievement.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DSAchievement.m; sourceTree = "<group>"; };
 		2D7AA18517AD5E1E006519EF /* TestableDSAchievement.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestableDSAchievement.h; sourceTree = "<group>"; };
 		2D7AA18617AD5E1E006519EF /* TestableDSAchievement.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestableDSAchievement.m; sourceTree = "<group>"; };
+		2D7AA18817AD890D006519EF /* DSAchievementStorage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DSAchievementStorage.h; sourceTree = "<group>"; };
+		2D7AA18917AD890D006519EF /* DSAchievementStorage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DSAchievementStorage.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -166,6 +169,7 @@
 		2D7AA17D17AD40F4006519EF /* Headers */ = {
 			isa = PBXGroup;
 			children = (
+				2D7AA18817AD890D006519EF /* DSAchievementStorage.h */,
 				2D7AA18217AD41F5006519EF /* DSAchievement.h */,
 				2D7AA17F17AD4163006519EF /* DSAchievementViewController.h */,
 				2D7AA15717AC47F4006519EF /* DSAppDelegate.h */,
@@ -177,6 +181,7 @@
 			isa = PBXGroup;
 			children = (
 				2D7AA18317AD41F5006519EF /* DSAchievement.m */,
+				2D7AA18917AD890D006519EF /* DSAchievementStorage.m */,
 				2D7AA18017AD4163006519EF /* DSAchievementViewController.m */,
 				2D7AA15817AC47F4006519EF /* DSAppDelegate.m */,
 			);
@@ -297,6 +302,7 @@
 				2D7AA15917AC47F4006519EF /* DSAppDelegate.m in Sources */,
 				2D7AA18117AD4163006519EF /* DSAchievementViewController.m in Sources */,
 				2D7AA18417AD41F5006519EF /* DSAchievement.m in Sources */,
+				2D7AA18A17AD890D006519EF /* DSAchievementStorage.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -470,6 +476,7 @@
 				2D7AA17917AC47F5006519EF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		2D7AA17A17AC47F5006519EF /* Build configuration list for PBXNativeTarget "DaysSinceTests" */ = {
 			isa = XCConfigurationList;
@@ -478,6 +485,7 @@
 				2D7AA17C17AC47F5006519EF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
