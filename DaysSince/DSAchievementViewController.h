@@ -11,6 +11,7 @@
 @interface DSAchievementViewController : UITableViewController
 {
 }
--(IBAction)addNewAchievement:(id)sender;
+-(IBAction)addAchievement:(id)sender;
+-(IBAction)showSettings:(id)sender;
 @end
 

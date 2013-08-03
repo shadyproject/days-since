@@ -7,13 +7,24 @@
 //
 
 #import "DSAppDelegate.h"
+#import "DSAchievementViewController.h"
+
 
 @implementation DSAppDelegate
 
+#pragma mark -
+#pragma mark Application Delegate Notifications
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
+    
+    
     // Override point for customization after application launch.
+    DSAchievementViewController* avc = [[DSAchievementViewController alloc] init];
+    
+    UINavigationController* navController = [[UINavigationController alloc] initWithRootViewController:avc];
+    [self.window setRootViewController:navController];
+    
     self.window.backgroundColor = [UIColor whiteColor];
     [self.window makeKeyAndVisible];
     return YES;
