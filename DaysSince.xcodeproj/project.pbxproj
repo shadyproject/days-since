@@ -27,6 +27,8 @@
 		2D7AA18A17AD890D006519EF /* DSAchievementStorage.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D7AA18917AD890D006519EF /* DSAchievementStorage.m */; };
 		2D7AA18D17ADD5DB006519EF /* DSAddAchievementViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D7AA18C17ADD5DB006519EF /* DSAddAchievementViewController.m */; };
 		2D7AA19017ADD6FB006519EF /* DSAddAchievementViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2D7AA18F17ADD6FB006519EF /* DSAddAchievementViewController.xib */; };
+		2D7AA19317AE0489006519EF /* DSAchievementDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D7AA19217AE0488006519EF /* DSAchievementDetailViewController.m */; };
+		2D7AA19517AE04C8006519EF /* DSAchievementDetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2D7AA19417AE04C8006519EF /* DSAchievementDetailViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -70,6 +72,9 @@
 		2D7AA18B17ADD5DB006519EF /* DSAddAchievementViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DSAddAchievementViewController.h; sourceTree = "<group>"; };
 		2D7AA18C17ADD5DB006519EF /* DSAddAchievementViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DSAddAchievementViewController.m; sourceTree = "<group>"; };
 		2D7AA18F17ADD6FB006519EF /* DSAddAchievementViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DSAddAchievementViewController.xib; sourceTree = "<group>"; };
+		2D7AA19117AE0488006519EF /* DSAchievementDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DSAchievementDetailViewController.h; sourceTree = "<group>"; };
+		2D7AA19217AE0488006519EF /* DSAchievementDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DSAchievementDetailViewController.m; sourceTree = "<group>"; };
+		2D7AA19417AE04C8006519EF /* DSAchievementDetailViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DSAchievementDetailViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -175,6 +180,7 @@
 		2D7AA17D17AD40F4006519EF /* Headers */ = {
 			isa = PBXGroup;
 			children = (
+				2D7AA19117AE0488006519EF /* DSAchievementDetailViewController.h */,
 				2D7AA18B17ADD5DB006519EF /* DSAddAchievementViewController.h */,
 				2D7AA18817AD890D006519EF /* DSAchievementStorage.h */,
 				2D7AA18217AD41F5006519EF /* DSAchievement.h */,
@@ -187,6 +193,7 @@
 		2D7AA17E17AD40FB006519EF /* Implementations */ = {
 			isa = PBXGroup;
 			children = (
+				2D7AA19217AE0488006519EF /* DSAchievementDetailViewController.m */,
 				2D7AA18317AD41F5006519EF /* DSAchievement.m */,
 				2D7AA18C17ADD5DB006519EF /* DSAddAchievementViewController.m */,
 				2D7AA18917AD890D006519EF /* DSAchievementStorage.m */,
@@ -200,6 +207,7 @@
 			isa = PBXGroup;
 			children = (
 				2D7AA18F17ADD6FB006519EF /* DSAddAchievementViewController.xib */,
+				2D7AA19417AE04C8006519EF /* DSAchievementDetailViewController.xib */,
 			);
 			name = Xibs;
 			sourceTree = "<group>";
@@ -281,6 +289,7 @@
 				2D7AA15D17AC47F4006519EF /* Default@2x.png in Resources */,
 				2D7AA15F17AC47F4006519EF /* Default-568h@2x.png in Resources */,
 				2D7AA19017ADD6FB006519EF /* DSAddAchievementViewController.xib in Resources */,
+				2D7AA19517AE04C8006519EF /* DSAchievementDetailViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -321,6 +330,7 @@
 				2D7AA18417AD41F5006519EF /* DSAchievement.m in Sources */,
 				2D7AA18A17AD890D006519EF /* DSAchievementStorage.m in Sources */,
 				2D7AA18D17ADD5DB006519EF /* DSAddAchievementViewController.m in Sources */,
+				2D7AA19317AE0489006519EF /* DSAchievementDetailViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

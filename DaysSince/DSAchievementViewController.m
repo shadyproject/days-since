@@ -10,6 +10,7 @@
 #import "DSAchievement.h"
 #import "DSAchievementStorage.h"
 #import "DSAddAchievementViewController.h"
+#import "DSAchievementDetailViewController.h"
 
 @implementation DSAchievementViewController
 
@@ -40,7 +41,7 @@
 }
 
 #pragma mark -
-#pragma mark UITableViewDataSource Methods
+#pragma mark TableView Methods
 -(NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
     return [[[DSAchievementStorage sharedStorage] allAchievements] count];
 }
@@ -52,7 +53,6 @@
         cell = [[UITableViewCell alloc]initWithStyle:UITableViewCellStyleSubtitle reuseIdentifier:@"TableViewCell-Subtitle"];
     }
     
-    //todo set this up to display how i want it with subtitle and such
     DSAchievement* achivement = [[[DSAchievementStorage sharedStorage] allAchievements] objectAtIndex:indexPath.row];
     
     cell.textLabel.text = achivement.achievement;
@@ -77,6 +77,16 @@
         
         [tableView deleteRowsAtIndexPaths:[NSArray arrayWithObject:indexPath] withRowAnimation:UITableViewRowAnimationFade];
     }
+}
+
+-(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
+    DSAchievement* achievement = [[[DSAchievementStorage sharedStorage] allAchievements] objectAtIndex:indexPath.row];
+    
+    DSAchievementDetailViewController *detailViewController = [[DSAchievementDetailViewController alloc] init];
+    
+    detailViewController.achievement = achievement;
+    
+    [self.navigationController pushViewController:detailViewController animated:YES];
 }
 
 #pragma mark -
