@@ -63,7 +63,13 @@
     self = [super init];
     
     if (self){
-        achievements = [[NSMutableArray alloc] init];
+        NSString* path = [self persistencePath];
+        achievements = [NSKeyedUnarchiver unarchiveObjectWithFile:path];
+        
+        //if nothing was saved, create it from scratch
+        if (!achievements) {
+            achievements = [[NSMutableArray alloc] init];
+        }
     }
 
     return self;

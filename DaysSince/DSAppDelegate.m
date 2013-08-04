@@ -8,14 +8,13 @@
 
 #import "DSAppDelegate.h"
 #import "DSAchievementViewController.h"
-
+#import "DSAchievementStorage.h"
 
 @implementation DSAppDelegate
 
 #pragma mark -
 #pragma mark Application Delegate Notifications
-- (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
-{
+-(BOOL)application:(UIApplication*)application didFinishLaunchingWithOptions:(NSDictionary*)launchOptions{
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     
     
@@ -36,10 +35,14 @@
     // Use this method to pause ongoing tasks, disable timers, and throttle down OpenGL ES frame rates. Games should use this method to pause the game.
 }
 
-- (void)applicationDidEnterBackground:(UIApplication *)application
-{
-    // Use this method to release shared resources, save user data, invalidate timers, and store enough application state information to restore your application to its current state in case it is terminated later. 
-    // If your application supports background execution, this method is called instead of applicationWillTerminate: when the user quits.
+-(void)applicationDidEnterBackground:(UIApplication*)application{
+    BOOL didSave = [[DSAchievementStorage sharedStorage] persist];
+    
+    if (didSave){
+        DLog(@"All achievements persisted");
+    }else{
+        DLog(@"Could not persist achievements");
+    }
 }
 
 - (void)applicationWillEnterForeground:(UIApplication *)application
