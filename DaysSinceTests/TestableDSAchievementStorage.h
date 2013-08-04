@@ -10,4 +10,6 @@
 
 @interface TestableDSAchievementStorage : DSAchievementStorage
 
++(void)removeTestPersistenceFile;
+
 @end

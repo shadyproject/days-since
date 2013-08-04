@@ -14,14 +14,19 @@
 - (void)setUp
 {
     [super setUp];
-    
-    // Set-up code here.
+    //ensure that we delete any temp persistence files
+    [TestableDSAchievementStorage removeTestPersistenceFile];
 }
 
 - (void)tearDown
 {
-    // Tear-down code here.
+    //clean up after ourselves
+    for (DSAchievement* a in [[TestableDSAchievementStorage sharedStorage] allAchievements]){
+        [[TestableDSAchievementStorage sharedStorage] removeAchievement:a];
+    }
     
+    //ensure that we delete any temp persistence files
+    [TestableDSAchievementStorage removeTestPersistenceFile];
     [super tearDown];
 }
 
@@ -32,13 +37,17 @@
 }
 
 -(void)testAddAchievement{
-    STAssertTrue([[[TestableDSAchievementStorage sharedStorage] allAchievements] count] == 0, @"There shouldn't be anythign in storage yet");
+    
+    NSUInteger testCount =[[[TestableDSAchievementStorage sharedStorage] allAchievements] count];
+    STAssertTrue( testCount == 0, @"There shouldn't be anything in storage yet");
     
     DSAchievement* a = [[DSAchievement alloc] initWithAchievement:@"Test" startedOrStopped:DSAchievementTypeStarted];
     
     [[TestableDSAchievementStorage sharedStorage] addAchievement:a];
     
-    STAssertTrue([[[TestableDSAchievementStorage sharedStorage] allAchievements] count] == 1, @"There should be 1 object in storage");
+    testCount =[[[TestableDSAchievementStorage sharedStorage] allAchievements] count];
+    
+    STAssertTrue(testCount == 1, @"There should be 1 object in storage but there is %d", testCount);
 }
 
 -(void)testRemoveAchievment{
@@ -46,18 +55,22 @@
     
     [[TestableDSAchievementStorage sharedStorage] addAchievement:a];
     
-    STAssertTrue([[[TestableDSAchievementStorage sharedStorage] allAchievements] count] == 1, @"There should be 1 object in storage");
+    NSUInteger testCount =[[[TestableDSAchievementStorage sharedStorage] allAchievements] count];
+    
+    STAssertTrue(testCount == 1, @"There should be 1 object in storage but has %d", testCount);
     
     [[TestableDSAchievementStorage sharedStorage] removeAchievement:a];
     
-    STAssertTrue([[[TestableDSAchievementStorage sharedStorage] allAchievements] count] == 0, @"There shouldn't be anything left in storage");
+    testCount =[[[TestableDSAchievementStorage sharedStorage] allAchievements] count];
+    
+    STAssertTrue( testCount == 0, @"There shouldn't be anything left in storage but there is %d", testCount);
 }
 
--(void)testPersistAchievement{
-    STFail(@"Not Yet Implemented");
+-(void)testPersistence{
+     DSAchievement* a = [[DSAchievement alloc] initWithAchievement:@"Test" startedOrStopped:DSAchievementTypeStarted];
+    [[TestableDSAchievementStorage sharedStorage] addAchievement:a];
+    
+    STAssertTrue([[TestableDSAchievementStorage sharedStorage] persist], @"Persistence should have worked");
 }
 
--(void)testRestoreAchievement{
-    STFail(@"Not yet implemented");
-}
 @end
