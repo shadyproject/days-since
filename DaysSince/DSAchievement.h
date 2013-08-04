@@ -16,6 +16,7 @@ typedef NS_ENUM(NSInteger, DSAchievementType){
 @interface DSAchievement : NSObject
 {
     NSInteger _longestStreak;
+    //should current streak be calculated via date?
     NSInteger _currentStreak;
 }
 
