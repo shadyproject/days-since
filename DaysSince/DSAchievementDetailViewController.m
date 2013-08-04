@@ -8,10 +8,29 @@
 
 #import "DSAchievementDetailViewController.h"
 #import "DSAchievement.h"
+#import "DSAchievementStorage.h"
 
 @implementation DSAchievementDetailViewController
 
 @synthesize achievement;
+
+-(void)alertView:(UIAlertView *)alertView clickedButtonAtIndex:(NSInteger)buttonIndex{
+   
+    switch (buttonIndex) {
+        case 0:
+            DLog(@"Keep tracking, dismiss ourself and do nothing");
+            break;
+            
+        case 1:
+            DLog(@"Deleting achievement");
+            [[DSAchievementStorage sharedStorage] removeAchievement:achievement];
+            [self.navigationController popToRootViewControllerAnimated:YES];
+            
+        default:
+            break;
+    }
+    
+}
 
 #pragma mark -
 #pragma mark Overrides
@@ -38,8 +57,9 @@
 #pragma mark IBActions
 -(IBAction)stopTracking:(id)sender{
     //todo prompt for confirmation here
-    DLog(@"Delete the item from storage and hide myself here");
+    UIAlertView* confirmDeleteAlert = [[UIAlertView alloc] initWithTitle:@"Really stop tracking?" message:@"Are you sure you want to stop tracking this habit?  You're doing awesome so far!" delegate:self cancelButtonTitle:@"Keep Tracking" otherButtonTitles:@"Stop Tracking", nil];
     
-    [self.navigationController popToRootViewControllerAnimated:YES];
+    [confirmDeleteAlert show];
 }
+
 @end

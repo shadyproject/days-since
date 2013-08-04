@@ -10,7 +10,7 @@
 
 @class DSAchievement;
 
-@interface DSAchievementDetailViewController : UIViewController <UINavigationControllerDelegate>
+@interface DSAchievementDetailViewController : UIViewController <UINavigationControllerDelegate, UIAlertViewDelegate>
 {
     //todo instead of using all these labels,
     //we should just draw the text into the view with attributes
