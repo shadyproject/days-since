@@ -17,6 +17,8 @@
 
 +(DSAchievementStorage*)sharedStorage;
 
+-(NSString*)persistencePath;
+-(BOOL)persist;
 -(NSArray*)allAchievements;
 -(void)addAchievement:(DSAchievement*)achieve;
 -(void)removeAchievement:(DSAchievement*)achieve;

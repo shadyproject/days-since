@@ -36,6 +36,21 @@
     [achievements removeObjectIdenticalTo:achieve];
 }
 
+-(NSString *)persistencePath{
+    NSArray* documentDirectories = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES);
+    
+    //grab the first directory
+    NSString* documentDir = [documentDirectories objectAtIndex:0];
+    
+    return [documentDir stringByAppendingPathComponent:@"achievements.archive"];
+}
+
+-(BOOL)persist{
+    NSString* path = [self persistencePath];
+    
+    return [NSKeyedArchiver archiveRootObject:achievements toFile:path];
+}
+
 #pragma mark -
 #pragma mark Overrides
 +(id)allocWithZone:(NSZone*)zone{
