@@ -46,15 +46,25 @@
 }
 
 -(UITableViewCell*)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"TableViewCell-Default"];
+    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"TableViewCell-Subtitle"];
     
     if (!cell) {
-        cell = [[UITableViewCell alloc]initWithStyle:UITableViewCellStyleDefault reuseIdentifier:@"TableViewCell-Default"];
+        cell = [[UITableViewCell alloc]initWithStyle:UITableViewCellStyleSubtitle reuseIdentifier:@"TableViewCell-Subtitle"];
     }
     
     //todo set this up to display how i want it with subtitle and such
     DSAchievement* achivement = [[[DSAchievementStorage sharedStorage] allAchievements] objectAtIndex:indexPath.row];
-    cell.textLabel.text = achivement.description;
+    
+    cell.textLabel.text = achivement.achievement;
+    
+    NSDateFormatter* longFormatter = [[NSDateFormatter alloc] init];
+    [longFormatter setDateStyle:NSDateFormatterLongStyle];
+    
+    NSString* subtitle =[NSString stringWithFormat:@"%@ on %@",
+                         (achivement.startedOrStopped == DSAchievementTypeStarted ? @"started" : @"stopped"),
+                         [longFormatter stringFromDate:achivement.firstDate]];
+    
+    cell.detailTextLabel.text = subtitle;
     
     return cell;
 }
