@@ -25,6 +25,8 @@
 		2D7AA18417AD41F5006519EF /* DSAchievement.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D7AA18317AD41F5006519EF /* DSAchievement.m */; };
 		2D7AA18717AD5E1E006519EF /* TestableDSAchievement.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D7AA18617AD5E1E006519EF /* TestableDSAchievement.m */; };
 		2D7AA18A17AD890D006519EF /* DSAchievementStorage.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D7AA18917AD890D006519EF /* DSAchievementStorage.m */; };
+		2D7AA18D17ADD5DB006519EF /* DSAddAchievementViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D7AA18C17ADD5DB006519EF /* DSAddAchievementViewController.m */; };
+		2D7AA19017ADD6FB006519EF /* DSAddAchievementViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2D7AA18F17ADD6FB006519EF /* DSAddAchievementViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -65,6 +67,9 @@
 		2D7AA18617AD5E1E006519EF /* TestableDSAchievement.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestableDSAchievement.m; sourceTree = "<group>"; };
 		2D7AA18817AD890D006519EF /* DSAchievementStorage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DSAchievementStorage.h; sourceTree = "<group>"; };
 		2D7AA18917AD890D006519EF /* DSAchievementStorage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DSAchievementStorage.m; sourceTree = "<group>"; };
+		2D7AA18B17ADD5DB006519EF /* DSAddAchievementViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DSAddAchievementViewController.h; sourceTree = "<group>"; };
+		2D7AA18C17ADD5DB006519EF /* DSAddAchievementViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DSAddAchievementViewController.m; sourceTree = "<group>"; };
+		2D7AA18F17ADD6FB006519EF /* DSAddAchievementViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DSAddAchievementViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -127,6 +132,7 @@
 				2D7AA17D17AD40F4006519EF /* Headers */,
 				2D7AA17E17AD40FB006519EF /* Implementations */,
 				2D7AA14F17AC47F4006519EF /* Supporting Files */,
+				2D7AA18E17ADD6D5006519EF /* Xibs */,
 			);
 			path = DaysSince;
 			sourceTree = "<group>";
@@ -169,6 +175,7 @@
 		2D7AA17D17AD40F4006519EF /* Headers */ = {
 			isa = PBXGroup;
 			children = (
+				2D7AA18B17ADD5DB006519EF /* DSAddAchievementViewController.h */,
 				2D7AA18817AD890D006519EF /* DSAchievementStorage.h */,
 				2D7AA18217AD41F5006519EF /* DSAchievement.h */,
 				2D7AA17F17AD4163006519EF /* DSAchievementViewController.h */,
@@ -181,11 +188,20 @@
 			isa = PBXGroup;
 			children = (
 				2D7AA18317AD41F5006519EF /* DSAchievement.m */,
+				2D7AA18C17ADD5DB006519EF /* DSAddAchievementViewController.m */,
 				2D7AA18917AD890D006519EF /* DSAchievementStorage.m */,
 				2D7AA18017AD4163006519EF /* DSAchievementViewController.m */,
 				2D7AA15817AC47F4006519EF /* DSAppDelegate.m */,
 			);
 			name = Implementations;
+			sourceTree = "<group>";
+		};
+		2D7AA18E17ADD6D5006519EF /* Xibs */ = {
+			isa = PBXGroup;
+			children = (
+				2D7AA18F17ADD6FB006519EF /* DSAddAchievementViewController.xib */,
+			);
+			name = Xibs;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -264,6 +280,7 @@
 				2D7AA15B17AC47F4006519EF /* Default.png in Resources */,
 				2D7AA15D17AC47F4006519EF /* Default@2x.png in Resources */,
 				2D7AA15F17AC47F4006519EF /* Default-568h@2x.png in Resources */,
+				2D7AA19017ADD6FB006519EF /* DSAddAchievementViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -303,6 +320,7 @@
 				2D7AA18117AD4163006519EF /* DSAchievementViewController.m in Sources */,
 				2D7AA18417AD41F5006519EF /* DSAchievement.m in Sources */,
 				2D7AA18A17AD890D006519EF /* DSAchievementStorage.m in Sources */,
+				2D7AA18D17ADD5DB006519EF /* DSAddAchievementViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
