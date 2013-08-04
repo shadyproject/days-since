@@ -9,6 +9,7 @@
 #import "DSAchievementViewController.h"
 #import "DSAchievement.h"
 #import "DSAchievementStorage.h"
+#import "DSAddAchievementViewController.h"
 
 @implementation DSAchievementViewController
 
@@ -79,21 +80,13 @@
 #pragma mark -
 #pragma mark IBActions
 -(IBAction)addAchievement:(id)sender{
-    //todo use the view controller to show a create new view
-    DSAchievement *achievement = [[DSAchievement alloc] initWithAchievement:@"running everyday." startedOrStopped:DSAchievementTypeStarted];
+    DSAddAchievementViewController *addViewController = [[DSAddAchievementViewController alloc] init];
     
-    [[DSAchievementStorage sharedStorage] addAchievement:achievement];
-    
-    int lastRow = [[[DSAchievementStorage sharedStorage] allAchievements] indexOfObject:achievement];
-    
-    NSIndexPath *ip = [NSIndexPath indexPathForRow:lastRow inSection:0];
-    
-    [[self tableView] insertRowsAtIndexPaths:[NSArray arrayWithObject:ip]
-                            withRowAnimation:UITableViewRowAnimationTop];
+    [self.navigationController pushViewController:addViewController animated:true];
 }
 
 -(IBAction)showSettings:(id)sender{
-    NSLog(@"Show the settings view here.");
+    DLog(@"Show the settings view here.");
 }
 
 @end

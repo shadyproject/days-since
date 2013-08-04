@@ -8,10 +8,14 @@
 
 #import <Foundation/Foundation.h>
 
-@interface DSAddAchievementViewController : UIViewController <UINavigationControllerDelegate>
+@class DSAchievement;
+
+@interface DSAddAchievementViewController : UIViewController <UINavigationControllerDelegate, UITextFieldDelegate>
 {
-    
+    __weak IBOutlet UISegmentedControl *startedStoppedPicker;
+    __weak IBOutlet UITextField* achievementText;
 }
 
+-(IBAction)startTracking:(id)sender;
 
 @end
