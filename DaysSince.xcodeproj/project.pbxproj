@@ -29,6 +29,8 @@
 		2D7AA19017ADD6FB006519EF /* DSAddAchievementViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2D7AA18F17ADD6FB006519EF /* DSAddAchievementViewController.xib */; };
 		2D7AA19317AE0489006519EF /* DSAchievementDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D7AA19217AE0488006519EF /* DSAchievementDetailViewController.m */; };
 		2D7AA19517AE04C8006519EF /* DSAchievementDetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2D7AA19417AE04C8006519EF /* DSAchievementDetailViewController.xib */; };
+		2D7AA19817AEB7DB006519EF /* AchievementStorageTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D7AA19717AEB7DB006519EF /* AchievementStorageTests.m */; };
+		2D7AA19B17AEC19B006519EF /* TestableDSAchievementStorage.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D7AA19A17AEC19B006519EF /* TestableDSAchievementStorage.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -75,6 +77,10 @@
 		2D7AA19117AE0488006519EF /* DSAchievementDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DSAchievementDetailViewController.h; sourceTree = "<group>"; };
 		2D7AA19217AE0488006519EF /* DSAchievementDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DSAchievementDetailViewController.m; sourceTree = "<group>"; };
 		2D7AA19417AE04C8006519EF /* DSAchievementDetailViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DSAchievementDetailViewController.xib; sourceTree = "<group>"; };
+		2D7AA19617AEB7DB006519EF /* AchievementStorageTests.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AchievementStorageTests.h; sourceTree = "<group>"; };
+		2D7AA19717AEB7DB006519EF /* AchievementStorageTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AchievementStorageTests.m; sourceTree = "<group>"; };
+		2D7AA19917AEC19B006519EF /* TestableDSAchievementStorage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestableDSAchievementStorage.h; sourceTree = "<group>"; };
+		2D7AA19A17AEC19B006519EF /* TestableDSAchievementStorage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestableDSAchievementStorage.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -164,6 +170,10 @@
 				2D7AA16D17AC47F5006519EF /* Supporting Files */,
 				2D7AA18517AD5E1E006519EF /* TestableDSAchievement.h */,
 				2D7AA18617AD5E1E006519EF /* TestableDSAchievement.m */,
+				2D7AA19617AEB7DB006519EF /* AchievementStorageTests.h */,
+				2D7AA19717AEB7DB006519EF /* AchievementStorageTests.m */,
+				2D7AA19917AEC19B006519EF /* TestableDSAchievementStorage.h */,
+				2D7AA19A17AEC19B006519EF /* TestableDSAchievementStorage.m */,
 			);
 			path = DaysSinceTests;
 			sourceTree = "<group>";
@@ -340,6 +350,8 @@
 			files = (
 				2D7AA17417AC47F5006519EF /* DaysSinceTests.m in Sources */,
 				2D7AA18717AD5E1E006519EF /* TestableDSAchievement.m in Sources */,
+				2D7AA19817AEB7DB006519EF /* AchievementStorageTests.m in Sources */,
+				2D7AA19B17AEC19B006519EF /* TestableDSAchievementStorage.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
