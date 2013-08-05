@@ -8,7 +8,12 @@
 
 #import <UIKit/UIKit.h>
 
+@class DSAchievementViewController;
+
 @interface DSAppDelegate : UIResponder <UIApplicationDelegate>
+{
+    DSAchievementViewController* _mainViewController;
+}
 
 @property (strong, nonatomic) UIWindow *window;
 
