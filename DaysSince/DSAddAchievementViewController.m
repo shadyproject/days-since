@@ -75,7 +75,6 @@
     NSDictionary *info = [NSDictionary dictionaryWithObject:a.achievement forKey:@"achievement"];
     notifyTomorrow.userInfo = info;
     
-    //[[UIApplication sharedApplication] scheduleLocalNotification:notifyTomorrow];
-    [[UIApplication sharedApplication] presentLocalNotificationNow:notifyTomorrow];
+    [[UIApplication sharedApplication] scheduleLocalNotification:notifyTomorrow];
 }
 @end

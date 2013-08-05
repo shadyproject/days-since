@@ -13,5 +13,7 @@
 }
 -(IBAction)addAchievement:(id)sender;
 -(IBAction)showSettings:(id)sender;
+
+-(void)showTrackingView:(NSString*)achievementTitle;
 @end
 

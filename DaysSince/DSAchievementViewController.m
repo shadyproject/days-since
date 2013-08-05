@@ -11,6 +11,7 @@
 #import "DSAchievementStorage.h"
 #import "DSAddAchievementViewController.h"
 #import "DSAchievementDetailViewController.h"
+#import "DSUpdateAchievementViewController.h"
 
 @implementation DSAchievementViewController
 
@@ -99,4 +100,11 @@
     DLog(@"Show the settings view here.");
 }
 
+#pragma mark -
+-(void)showTrackingView:(NSString *)achievementTitle{
+    DLog(@"Showing tracking view for achievement %@", achievementTitle);
+    DSUpdateAchievementViewController *updateViewController = [[DSUpdateAchievementViewController alloc] init];
+    
+    [self.navigationController pushViewController:updateViewController animated:YES];
+}
 @end
