@@ -33,6 +33,7 @@
 		2D7AA19B17AEC19B006519EF /* TestableDSAchievementStorage.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D7AA19A17AEC19B006519EF /* TestableDSAchievementStorage.m */; };
 		2D7AA19E17AF4DA2006519EF /* DSUpdateAchievementViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D7AA19D17AF4DA2006519EF /* DSUpdateAchievementViewController.m */; };
 		2D7AA1A017AF4E2C006519EF /* DSUpdateAchievementViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2D7AA19F17AF4E2C006519EF /* DSUpdateAchievementViewController.xib */; };
+		2D7AA1A217AF66DC006519EF /* Social.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2D7AA1A117AF66DC006519EF /* Social.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -86,6 +87,7 @@
 		2D7AA19C17AF4DA2006519EF /* DSUpdateAchievementViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DSUpdateAchievementViewController.h; sourceTree = "<group>"; };
 		2D7AA19D17AF4DA2006519EF /* DSUpdateAchievementViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DSUpdateAchievementViewController.m; sourceTree = "<group>"; };
 		2D7AA19F17AF4E2C006519EF /* DSUpdateAchievementViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DSUpdateAchievementViewController.xib; sourceTree = "<group>"; };
+		2D7AA1A117AF66DC006519EF /* Social.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Social.framework; path = System/Library/Frameworks/Social.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -93,6 +95,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2D7AA1A217AF66DC006519EF /* Social.framework in Frameworks */,
 				2D7AA14917AC47F4006519EF /* UIKit.framework in Frameworks */,
 				2D7AA14B17AC47F4006519EF /* Foundation.framework in Frameworks */,
 				2D7AA14D17AC47F4006519EF /* CoreGraphics.framework in Frameworks */,
@@ -115,6 +118,7 @@
 		2D7AA13C17AC47F4006519EF = {
 			isa = PBXGroup;
 			children = (
+				2D7AA1A117AF66DC006519EF /* Social.framework */,
 				2D7AA14E17AC47F4006519EF /* DaysSince */,
 				2D7AA16C17AC47F5006519EF /* DaysSinceTests */,
 				2D7AA14717AC47F4006519EF /* Frameworks */,
