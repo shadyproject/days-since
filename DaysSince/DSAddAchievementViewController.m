@@ -11,6 +11,8 @@
 #import "DSAchievementStorage.h"
 #import "DSSocialMediaController.h"
 
+NSString* const DSAchievementUserInfoKey = @"achievement";
+
 @implementation DSAddAchievementViewController
 
 #pragma mark -

@@ -9,8 +9,8 @@
 #import "DSAppDelegate.h"
 #import "DSAchievementViewController.h"
 #import "DSAchievementStorage.h"
-#import "DSAchievement.h"
 
+NSString* const DSAcheivementNotificationUserInfoKey = @"achievement";
 @implementation DSAppDelegate
 
 #pragma mark -
@@ -29,7 +29,7 @@
     if (notification){
         DLog(@"Received notification %@", notification);
         
-        NSString* title = [[notification userInfo] objectForKey:DSAchievementUserInfoKey];
+        NSString* title = [[notification userInfo] objectForKey:DSAcheivementNotificationUserInfoKey];
         [_mainViewController showTrackingView:title];
     }
     
@@ -41,7 +41,7 @@
 -(void)application:(UIApplication *)application didReceiveLocalNotification:(UILocalNotification *)notification{
     DLog(@"Received notification %@", notification);
     
-    NSString* title = [[notification userInfo] objectForKey:DSAchievementUserInfoKey];
+    NSString* title = [[notification userInfo] objectForKey:DSAcheivementNotificationUserInfoKey];
     
     [_mainViewController showTrackingView:title];
 }

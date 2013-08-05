@@ -13,6 +13,10 @@
 #import "DSAchievementDetailViewController.h"
 #import "DSUpdateAchievementViewController.h"
 
+
+NSString* const DSAchievementSubtitleCellID = @"TableViewCell-Subtitle";
+NSString* const DSAchievementSettingsButtonText = @"\u2699";
+
 @implementation DSAchievementViewController
 
 #pragma mark -

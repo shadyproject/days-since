@@ -8,8 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-NSString* const DSAchievementSubtitleCellID = @"TableViewCell-Subtitle";
-NSString* const DSAchievementSettingsButtonText = @"\u2699";
 
 @interface DSAchievementViewController : UITableViewController
 {
