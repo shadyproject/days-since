@@ -13,6 +13,8 @@ typedef NS_ENUM(NSInteger, DSAchievementType){
     DSAchievementTypeStopped 
 };
 
+NSString* const DSAchievementUserInfoKey = @"achievement";
+
 @interface DSAchievement : NSObject <NSCoding>
 {
     NSInteger _longestStreak;

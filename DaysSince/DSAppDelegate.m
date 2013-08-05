@@ -9,6 +9,7 @@
 #import "DSAppDelegate.h"
 #import "DSAchievementViewController.h"
 #import "DSAchievementStorage.h"
+#import "DSAchievement.h"
 
 @implementation DSAppDelegate
 

@@ -27,7 +27,7 @@
                                                                                    target:self
                                                                                    action:@selector(addAchievement:)];
         //how is this not a default button?
-        UIBarButtonItem *settingsButton = [[UIBarButtonItem alloc] initWithTitle:@"\u2699"
+        UIBarButtonItem *settingsButton = [[UIBarButtonItem alloc] initWithTitle:DSAchievementSettingsButtonText
                                                                            style:UIBarButtonItemStylePlain target:self action:@selector(showSettings:)];
         
         [self.navigationItem setRightBarButtonItem:settingsButton];
@@ -48,10 +48,10 @@
 }
 
 -(UITableViewCell*)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"TableViewCell-Subtitle"];
+    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:DSAchievementSubtitleCellID];
     
     if (!cell) {
-        cell = [[UITableViewCell alloc]initWithStyle:UITableViewCellStyleSubtitle reuseIdentifier:@"TableViewCell-Subtitle"];
+        cell = [[UITableViewCell alloc]initWithStyle:UITableViewCellStyleSubtitle reuseIdentifier:DSAchievementSubtitleCellID];
     }
     
     DSAchievement* achivement = [[[DSAchievementStorage sharedStorage] allAchievements] objectAtIndex:indexPath.row];

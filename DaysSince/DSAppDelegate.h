@@ -10,7 +10,6 @@
 
 @class DSAchievementViewController;
 
-NSString* const DSAchievementUserInfoKey = @"achievement";
 
 @interface DSAppDelegate : UIResponder <UIApplicationDelegate>
 {

@@ -105,7 +105,7 @@
     notifyTomorrow.repeatInterval = NSDayCalendarUnit;
     
     //see http://stackoverflow.com/questions/4637179/uilocalnotification-crash for why we don't store the whole achievment in the user info
-    NSDictionary *info = [NSDictionary dictionaryWithObject:a.achievement forKey:@"achievement"];
+    NSDictionary *info = [NSDictionary dictionaryWithObject:a.achievement forKey:DSAchievementUserInfoKey];
     notifyTomorrow.userInfo = info;
     
     [[UIApplication sharedApplication] scheduleLocalNotification:notifyTomorrow];
