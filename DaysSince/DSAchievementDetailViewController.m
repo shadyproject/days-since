@@ -62,4 +62,11 @@
     [confirmDeleteAlert show];
 }
 
+-(IBAction)postToTwitter:(id)sender{
+    DLog(@"Post to twitter here");
+}
+
+-(IBAction)postToFacebook:(id)sender{
+    DLog(@"Post to facebook here");
+}
 @end

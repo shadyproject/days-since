@@ -25,4 +25,6 @@
 @property (nonatomic, strong) DSAchievement* achievement;
 
 -(IBAction)stopTracking:(id)sender;
+-(IBAction)postToFacebook:(id)sender;
+-(IBAction)postToTwitter:(id)sender;
 @end
