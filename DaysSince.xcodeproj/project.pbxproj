@@ -34,6 +34,7 @@
 		2D7AA19E17AF4DA2006519EF /* DSUpdateAchievementViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D7AA19D17AF4DA2006519EF /* DSUpdateAchievementViewController.m */; };
 		2D7AA1A017AF4E2C006519EF /* DSUpdateAchievementViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2D7AA19F17AF4E2C006519EF /* DSUpdateAchievementViewController.xib */; };
 		2D7AA1A217AF66DC006519EF /* Social.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2D7AA1A117AF66DC006519EF /* Social.framework */; };
+		2D7AA1A517AF67AF006519EF /* DSSocialMediaController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D7AA1A417AF67AE006519EF /* DSSocialMediaController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -88,6 +89,8 @@
 		2D7AA19D17AF4DA2006519EF /* DSUpdateAchievementViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DSUpdateAchievementViewController.m; sourceTree = "<group>"; };
 		2D7AA19F17AF4E2C006519EF /* DSUpdateAchievementViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DSUpdateAchievementViewController.xib; sourceTree = "<group>"; };
 		2D7AA1A117AF66DC006519EF /* Social.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Social.framework; path = System/Library/Frameworks/Social.framework; sourceTree = SDKROOT; };
+		2D7AA1A317AF67AE006519EF /* DSSocialMediaController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DSSocialMediaController.h; sourceTree = "<group>"; };
+		2D7AA1A417AF67AE006519EF /* DSSocialMediaController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DSSocialMediaController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -205,6 +208,7 @@
 				2D7AA18817AD890D006519EF /* DSAchievementStorage.h */,
 				2D7AA18217AD41F5006519EF /* DSAchievement.h */,
 				2D7AA17F17AD4163006519EF /* DSAchievementViewController.h */,
+				2D7AA1A317AF67AE006519EF /* DSSocialMediaController.h */,
 				2D7AA15717AC47F4006519EF /* DSAppDelegate.h */,
 			);
 			name = Headers;
@@ -213,6 +217,7 @@
 		2D7AA17E17AD40FB006519EF /* Implementations */ = {
 			isa = PBXGroup;
 			children = (
+				2D7AA1A417AF67AE006519EF /* DSSocialMediaController.m */,
 				2D7AA19D17AF4DA2006519EF /* DSUpdateAchievementViewController.m */,
 				2D7AA19217AE0488006519EF /* DSAchievementDetailViewController.m */,
 				2D7AA18317AD41F5006519EF /* DSAchievement.m */,
@@ -355,6 +360,7 @@
 				2D7AA18D17ADD5DB006519EF /* DSAddAchievementViewController.m in Sources */,
 				2D7AA19317AE0489006519EF /* DSAchievementDetailViewController.m in Sources */,
 				2D7AA19E17AF4DA2006519EF /* DSUpdateAchievementViewController.m in Sources */,
+				2D7AA1A517AF67AF006519EF /* DSSocialMediaController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
