@@ -9,11 +9,14 @@
 #import <Foundation/Foundation.h>
 
 @class DSAchievement;
+@class DSSocialMediaController;
 
 @interface DSAddAchievementViewController : UIViewController <UINavigationControllerDelegate, UITextFieldDelegate>
 {
-    __weak IBOutlet UISegmentedControl *startedStoppedPicker;
+    __weak IBOutlet UISegmentedControl* startedStoppedPicker;
     __weak IBOutlet UITextField* achievementText;
+    
+    DSSocialMediaController* _smController;
 }
 
 -(IBAction)startTracking:(id)sender;

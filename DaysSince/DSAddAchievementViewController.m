@@ -9,8 +9,21 @@
 #import "DSAddAchievementViewController.h"
 #import "DSAchievement.h"
 #import "DSAchievementStorage.h"
+#import "DSSocialMediaController.h"
 
 @implementation DSAddAchievementViewController
+
+#pragma mark -
+#pragma mark Initializer
+-(id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil{
+    self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
+    
+    if (self){
+        _smController = [[DSSocialMediaController alloc] init];
+    }
+    
+    return self;
+}
 
 #pragma mark -
 #pragma mark Overrides
@@ -36,11 +49,23 @@
 }
 
 -(IBAction)postToFacebook:(id)sender{
-    DLog(@"Post to facebook here");
+    NSString *status = [NSString stringWithFormat:@"Today I'm going to %@ %@ and keep track with the DaysSince app for iOS.",
+                        (startedStoppedPicker.selectedSegmentIndex == 0 ? @"start" : @"stop"),
+                         achievementText.text];
+    
+    DLog(@"Posting facebook status");
+    
+    [self presentViewController:[_smController getControllerForStatus:status] animated:YES completion:nil];
 }
 
 -(IBAction)postToTwitter:(id)sender{
-    DLog(@"Post to twitter here");
+    NSString* tweet = [NSString stringWithFormat:@"Today I'm %@ %@ with @dayssinceios",
+                       (startedStoppedPicker.selectedSegmentIndex == 0 ? @"starting" : @"stopping"),
+                       achievementText.text];
+    
+    DLog(@"Sending tweet %@", tweet);
+    
+    [self presentViewController:[_smController getControllerForTweet:tweet] animated:YES completion:nil];
 }
 
 #pragma mark -
