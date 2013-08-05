@@ -17,16 +17,27 @@
 -(BOOL)application:(UIApplication*)application didFinishLaunchingWithOptions:(NSDictionary*)launchOptions{
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     
+    UILocalNotification *notification =[launchOptions objectForKey:UIApplicationLaunchOptionsLocalNotificationKey];
     
-    // Override point for customization after application launch.
+    if (notification){
+        DLog(@"Received notification %@", notification);
+    }
+    
+    //todo configure the view controller to handle the notification
     DSAchievementViewController* avc = [[DSAchievementViewController alloc] init];
     
     UINavigationController* navController = [[UINavigationController alloc] initWithRootViewController:avc];
     [self.window setRootViewController:navController];
     
+   
     self.window.backgroundColor = [UIColor whiteColor];
     [self.window makeKeyAndVisible];
     return YES;
+}
+
+-(void)application:(UIApplication *)application didReceiveLocalNotification:(UILocalNotification *)notification{
+    //todo configure the DSAchievementViewController to handle the notification
+    DLog(@"Received notification %@", notification);
 }
 
 - (void)applicationWillResignActive:(UIApplication *)application

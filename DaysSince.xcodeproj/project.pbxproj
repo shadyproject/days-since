@@ -165,13 +165,13 @@
 		2D7AA16C17AC47F5006519EF /* DaysSinceTests */ = {
 			isa = PBXGroup;
 			children = (
+				2D7AA16D17AC47F5006519EF /* Supporting Files */,
 				2D7AA17217AC47F5006519EF /* DaysSinceTests.h */,
 				2D7AA17317AC47F5006519EF /* DaysSinceTests.m */,
-				2D7AA16D17AC47F5006519EF /* Supporting Files */,
-				2D7AA18517AD5E1E006519EF /* TestableDSAchievement.h */,
-				2D7AA18617AD5E1E006519EF /* TestableDSAchievement.m */,
 				2D7AA19617AEB7DB006519EF /* AchievementStorageTests.h */,
 				2D7AA19717AEB7DB006519EF /* AchievementStorageTests.m */,
+				2D7AA18517AD5E1E006519EF /* TestableDSAchievement.h */,
+				2D7AA18617AD5E1E006519EF /* TestableDSAchievement.m */,
 				2D7AA19917AEC19B006519EF /* TestableDSAchievementStorage.h */,
 				2D7AA19A17AEC19B006519EF /* TestableDSAchievementStorage.m */,
 			);
