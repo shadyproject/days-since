@@ -9,6 +9,7 @@
 #import <Foundation/Foundation.h>
 
 @class DSAchievement;
+@class DSSocialMediaController;
 
 @interface DSAchievementDetailViewController : UIViewController <UINavigationControllerDelegate, UIAlertViewDelegate>
 {
@@ -20,6 +21,8 @@
     __weak IBOutlet UILabel* _currentStreakLabel;
     __weak IBOutlet UILabel* _longestStreakLabel;
     __weak IBOutlet UILabel* _randomFactLabel;
+    
+    DSSocialMediaController* _smController;
 }
 
 @property (nonatomic, strong) DSAchievement* achievement;
