@@ -31,6 +31,8 @@
 		2D7AA19517AE04C8006519EF /* DSAchievementDetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2D7AA19417AE04C8006519EF /* DSAchievementDetailViewController.xib */; };
 		2D7AA19817AEB7DB006519EF /* AchievementStorageTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D7AA19717AEB7DB006519EF /* AchievementStorageTests.m */; };
 		2D7AA19B17AEC19B006519EF /* TestableDSAchievementStorage.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D7AA19A17AEC19B006519EF /* TestableDSAchievementStorage.m */; };
+		2D7AA19E17AF4DA2006519EF /* DSUpdateAchievementViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D7AA19D17AF4DA2006519EF /* DSUpdateAchievementViewController.m */; };
+		2D7AA1A017AF4E2C006519EF /* DSUpdateAchievementViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2D7AA19F17AF4E2C006519EF /* DSUpdateAchievementViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -81,6 +83,9 @@
 		2D7AA19717AEB7DB006519EF /* AchievementStorageTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AchievementStorageTests.m; sourceTree = "<group>"; };
 		2D7AA19917AEC19B006519EF /* TestableDSAchievementStorage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestableDSAchievementStorage.h; sourceTree = "<group>"; };
 		2D7AA19A17AEC19B006519EF /* TestableDSAchievementStorage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestableDSAchievementStorage.m; sourceTree = "<group>"; };
+		2D7AA19C17AF4DA2006519EF /* DSUpdateAchievementViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DSUpdateAchievementViewController.h; sourceTree = "<group>"; };
+		2D7AA19D17AF4DA2006519EF /* DSUpdateAchievementViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DSUpdateAchievementViewController.m; sourceTree = "<group>"; };
+		2D7AA19F17AF4E2C006519EF /* DSUpdateAchievementViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DSUpdateAchievementViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -190,6 +195,7 @@
 		2D7AA17D17AD40F4006519EF /* Headers */ = {
 			isa = PBXGroup;
 			children = (
+				2D7AA19C17AF4DA2006519EF /* DSUpdateAchievementViewController.h */,
 				2D7AA19117AE0488006519EF /* DSAchievementDetailViewController.h */,
 				2D7AA18B17ADD5DB006519EF /* DSAddAchievementViewController.h */,
 				2D7AA18817AD890D006519EF /* DSAchievementStorage.h */,
@@ -203,6 +209,7 @@
 		2D7AA17E17AD40FB006519EF /* Implementations */ = {
 			isa = PBXGroup;
 			children = (
+				2D7AA19D17AF4DA2006519EF /* DSUpdateAchievementViewController.m */,
 				2D7AA19217AE0488006519EF /* DSAchievementDetailViewController.m */,
 				2D7AA18317AD41F5006519EF /* DSAchievement.m */,
 				2D7AA18C17ADD5DB006519EF /* DSAddAchievementViewController.m */,
@@ -218,6 +225,7 @@
 			children = (
 				2D7AA18F17ADD6FB006519EF /* DSAddAchievementViewController.xib */,
 				2D7AA19417AE04C8006519EF /* DSAchievementDetailViewController.xib */,
+				2D7AA19F17AF4E2C006519EF /* DSUpdateAchievementViewController.xib */,
 			);
 			name = Xibs;
 			sourceTree = "<group>";
@@ -300,6 +308,7 @@
 				2D7AA15F17AC47F4006519EF /* Default-568h@2x.png in Resources */,
 				2D7AA19017ADD6FB006519EF /* DSAddAchievementViewController.xib in Resources */,
 				2D7AA19517AE04C8006519EF /* DSAchievementDetailViewController.xib in Resources */,
+				2D7AA1A017AF4E2C006519EF /* DSUpdateAchievementViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -341,6 +350,7 @@
 				2D7AA18A17AD890D006519EF /* DSAchievementStorage.m in Sources */,
 				2D7AA18D17ADD5DB006519EF /* DSAddAchievementViewController.m in Sources */,
 				2D7AA19317AE0489006519EF /* DSAchievementDetailViewController.m in Sources */,
+				2D7AA19E17AF4DA2006519EF /* DSUpdateAchievementViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
