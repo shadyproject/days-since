@@ -69,16 +69,6 @@
     return cell;
 }
 
--(void)tableView:(UITableView *)tableView commitEditingStyle:(UITableViewCellEditingStyle)editingStyle forRowAtIndexPath:(NSIndexPath *)indexPath{
-    if (editingStyle == UITableViewCellEditingStyleDelete){
-        DSAchievement* toDelete = [[[DSAchievementStorage sharedStorage] allAchievements] objectAtIndex:indexPath.row];
-        
-        [[DSAchievementStorage sharedStorage] removeAchievement:toDelete];
-        
-        [tableView deleteRowsAtIndexPaths:[NSArray arrayWithObject:indexPath] withRowAnimation:UITableViewRowAnimationFade];
-    }
-}
-
 -(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
     DSAchievement* achievement = [[[DSAchievementStorage sharedStorage] allAchievements] objectAtIndex:indexPath.row];
     
