@@ -28,7 +28,7 @@
     if (notification){
         DLog(@"Received notification %@", notification);
         
-        NSString* title = [[notification userInfo] objectForKey:@"achievement"];
+        NSString* title = [[notification userInfo] objectForKey:DSAchievementUserInfoKey];
         [_mainViewController showTrackingView:title];
     }
     
@@ -40,7 +40,7 @@
 -(void)application:(UIApplication *)application didReceiveLocalNotification:(UILocalNotification *)notification{
     DLog(@"Received notification %@", notification);
     
-    NSString* title = [[notification userInfo] objectForKey:@"achievement"];
+    NSString* title = [[notification userInfo] objectForKey:DSAchievementUserInfoKey];
     
     [_mainViewController showTrackingView:title];
 }
