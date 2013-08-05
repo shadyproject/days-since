@@ -35,6 +35,14 @@
     [self.navigationController popToRootViewControllerAnimated:YES];
 }
 
+-(IBAction)postToFacebook:(id)sender{
+    DLog(@"Post to facebook here");
+}
+
+-(IBAction)postToTwitter:(id)sender{
+    DLog(@"Post to twitter here");
+}
+
 #pragma mark -
 #pragma mark UITextFieldDelegate Methods
 -(BOOL)textFieldShouldReturn:(UITextField* )textField{

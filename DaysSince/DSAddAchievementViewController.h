@@ -17,5 +17,6 @@
 }
 
 -(IBAction)startTracking:(id)sender;
-
+-(IBAction)postToTwitter:(id)sender;
+-(IBAction)postToFacebook:(id)sender;
 @end
