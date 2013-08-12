@@ -8,5 +8,16 @@
 
 #import <Foundation/Foundation.h>
 
+@class DSAchievement;
+
 @interface DSUpdateAchievementViewController : UIViewController <UINavigationControllerDelegate>
+{
+    __weak IBOutlet UILabel* _achievementLabel;
+}
+
+@property (nonatomic, strong) DSAchievement* achievement;
+
+-(IBAction)completedAchievement:(id)sender;
+-(IBAction)skippedAchievement:(id)sender;
+
 @end

@@ -109,6 +109,6 @@ NSString* const DSAchievementSettingsButtonText = @"\u2699";
     DLog(@"Showing tracking view for achievement %@", achievementTitle);
     DSUpdateAchievementViewController *updateViewController = [[DSUpdateAchievementViewController alloc] init];
     
-    [self.navigationController pushViewController:updateViewController animated:YES];
+    [self presentViewController:updateViewController animated:YES completion:nil];
 }
 @end
