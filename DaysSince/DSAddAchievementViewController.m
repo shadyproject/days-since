@@ -110,7 +110,7 @@ NSString* const DSAchievementUserInfoKey = @"achievement";
     NSDictionary *info = [NSDictionary dictionaryWithObject:a.achievement forKey:DSAchievementUserInfoKey];
     notifyTomorrow.userInfo = info;
     
-    //[[UIApplication sharedApplication] scheduleLocalNotification:notifyTomorrow];
-    [[UIApplication sharedApplication] presentLocalNotificationNow:notifyTomorrow];
+    [[UIApplication sharedApplication] scheduleLocalNotification:notifyTomorrow];
+    //[[UIApplication sharedApplication] presentLocalNotificationNow:notifyTomorrow];
 }
 @end
