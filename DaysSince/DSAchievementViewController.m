@@ -105,9 +105,15 @@ NSString* const DSAchievementSettingsButtonText = @"\u2699";
 }
 
 #pragma mark -
+#pragma mark Instance Methods
 -(void)showTrackingView:(NSString *)achievementTitle{
     DLog(@"Showing tracking view for achievement %@", achievementTitle);
+    
+    DSAchievement* achievementToUpdate = [[DSAchievementStorage sharedStorage] findAchievementByName:achievementTitle];
+    
     DSUpdateAchievementViewController *updateViewController = [[DSUpdateAchievementViewController alloc] init];
+    updateViewController.achievement = achievementToUpdate;
+    
     
     [self presentViewController:updateViewController animated:YES completion:nil];
 }
