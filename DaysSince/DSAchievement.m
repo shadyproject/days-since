@@ -66,7 +66,6 @@
         _longestStreak = _currentStreak;
     }
     _currentStreak = 0;
-    
 }
 
 #pragma mark -
