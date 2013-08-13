@@ -22,5 +22,6 @@
 -(NSArray*)allAchievements;
 -(void)addAchievement:(DSAchievement*)achieve;
 -(void)removeAchievement:(DSAchievement*)achieve;
+-(DSAchievement*)findAchievementByName:(NSString*)name;
 
 @end

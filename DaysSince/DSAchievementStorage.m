@@ -36,6 +36,14 @@
     [achievements removeObjectIdenticalTo:achieve];
 }
 
+-(DSAchievement*)findAchievementByName:(NSString *)name{
+    NSPredicate* findByName = [NSPredicate predicateWithFormat:@"achievement = %@", name];
+    NSArray* results = [achievements filteredArrayUsingPredicate:findByName];
+    
+    //fixme support more than on object with the same name
+    return [results objectAtIndex:0];
+}
+
 -(NSString *)persistencePath{
     NSArray* documentDirectories = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES);
     
